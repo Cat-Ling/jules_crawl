@@ -35,6 +35,7 @@ When working in a sandboxed or containerized environment, you may encounter non-
 - **Persistent playwright:**
   - **Sites requiring persistent browsing:** Some sites might need you to run a persistent playwright session and navigate around the site with it. In this case you will take screenshots every few seconds, analyze it, then decide where you need to click on the page to continue navigation the website.
   - **Usefulness:** This is especially useful for passing Cloudflare or other robot challenges (like Google Captcha). As well as mitigating the need to create a new session of playwright for every url.
+  - **Allows logging in:** The biggest advantage of having a persistent playwright session is that nagivation to login page and then logging in with user provided credentials is possible. And in case there's an OTP or TOTP, it's as easy as asking user for it and then filling it in.
 
   
 ## 3. Emulating a Real Browser (Headers & Cookies)
